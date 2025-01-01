@@ -755,7 +755,7 @@
             data-wow-delay="0.25s"
           >
             <p>
-              &copy; 2025 Created with
+              &copy; <span id="currentYear"></span> Created with
               <i class="bx bxs-heart bx-burst" style="color: #ff0000"></i> by
               <strong>M Risqinugraha Putra</strong>
             </p>
@@ -763,6 +763,10 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
